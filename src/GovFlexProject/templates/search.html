@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1> Search view </h1>
+  <form action='.' method='POST'>{% csrf_token %}
+    <input type='number' name='NAICScode' placeholder='NAICS Code'>
+    <input type='submit' value='Search'>
+  </form>
+{% endblock content %}
